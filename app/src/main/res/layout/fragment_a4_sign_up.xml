@@ -156,7 +156,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/txt_ya_cuenta_login"
+        android:id="@+id/txt_ya_cuenta_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/jua"
@@ -164,13 +164,13 @@
         android:textColor="#1A87DD"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.876" />
+        app:layout_constraintVertical_bias="0.74" />
 
     <Button
-        android:id="@+id/btn_crear_login"
+        android:id="@+id/btn_crear_signup"
         android:layout_width="347dp"
         android:layout_height="wrap_content"
         android:background="@drawable/boton_celeste"
@@ -179,5 +179,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.273" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -34,6 +34,9 @@
         <action
             android:id="@+id/action_a3Login_to_a4SignUp"
             app:destination="@id/a4SignUp" />
+        <action
+            android:id="@+id/action_a3Login_to_a5Home"
+            app:destination="@id/a5Home" />
     </fragment>
     <fragment
         android:id="@+id/a4SignUp"
@@ -43,5 +46,13 @@
         <action
             android:id="@+id/action_a4SignUp_to_a3Login"
             app:destination="@id/a3Login" />
+        <action
+            android:id="@+id/action_a4SignUp_to_a5Home"
+            app:destination="@id/a5Home" />
     </fragment>
+    <fragment
+        android:id="@+id/a5Home"
+        android:name="com.example.alkewalletproyecto.Fragment.A5Home"
+        android:label="fragment_a5_home"
+        tools:layout="@layout/fragment_a5_home" />
 </navigation>

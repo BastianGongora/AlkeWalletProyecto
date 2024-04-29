@@ -2,34 +2,27 @@ package com.example.alkewalletproyecto.Fragment;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.alkewalletproyecto.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link A4SignUp#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class A4SignUp extends Fragment {
 
 
 
     public A4SignUp() {
         // Required empty public constructor
-    }
-
-
-    // TODO: Rename and change types and number of parameters
-    public static A4SignUp newInstance(String param1, String param2) {
-        A4SignUp fragment = new A4SignUp();
-        Bundle args = new Bundle();
-        fragment.setArguments(args);
-        return fragment;
     }
 
     @Override
@@ -44,5 +37,23 @@ public class A4SignUp extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_a4_sign_up, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        final NavController navc3 = Navigation.findNavController(view);
+        Button btnCrearcuenta = view.findViewById(R.id.btn_crear_signup);
+        TextView txtYaCuenta = view.findViewById(R.id.txt_ya_cuenta_signup);
+
+        btnCrearcuenta.setOnClickListener(v -> {
+            navc3.navigate(R.id.a5Home);
+        });
+        txtYaCuenta.setOnClickListener(v -> {
+            navc3.navigate(R.id.a3Login);
+        });
+
+
+
     }
 }

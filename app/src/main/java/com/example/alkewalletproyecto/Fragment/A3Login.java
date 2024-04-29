@@ -16,11 +16,7 @@ import android.widget.TextView;
 
 import com.example.alkewalletproyecto.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link A3Login#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class A3Login extends Fragment {
 
 
@@ -29,15 +25,6 @@ public class A3Login extends Fragment {
         // Required empty public constructor
     }
 
-
-    // TODO: Rename and change types and number of parameters
-    public static A3Login newInstance(String param1, String param2) {
-        A3Login fragment = new A3Login();
-        Bundle args = new Bundle();
-
-        fragment.setArguments(args);
-        return fragment;
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -57,16 +44,15 @@ public class A3Login extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        final NavController navController = Navigation.findNavController(view);
+        final NavController navC2 = Navigation.findNavController(view);
+        Button btnLogeo = view.findViewById(R.id.btn_logeo);
+        TextView txtCrearcuenta = view.findViewById(R.id.txt_crear_cuenta);
 
-        Button btnLogin = view.findViewById(R.id.btn_logeo);
-        TextView btnCuentaCreadaLogin = view.findViewById(R.id.txt_ya_cuenta_login);
-
-        btnLogin.setOnClickListener(v -> {
-            navController.navigate(R.id.a5home);
+        txtCrearcuenta.setOnClickListener(v -> {
+            navC2.navigate(R.id.a4SignUp);
         });
-        btnCuentaCreadaLogin.setOnClickListener(v -> {
-            navController.navigate(R.id.a4SignUp);
+        btnLogeo.setOnClickListener(v -> {
+            navC2.navigate(R.id.a5Home);
         });
     }
 }

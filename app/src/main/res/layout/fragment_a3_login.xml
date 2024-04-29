@@ -149,7 +149,7 @@
         tools:layout_editor_absoluteY="619dp" />
 
     <TextView
-        android:id="@+id/txt_ya_cuenta_login"
+        android:id="@+id/txt_crear_cuenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
