@@ -5,8 +5,6 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.alkewalletproyecto.Fragment.SignUp_LoginFragment;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_map"
+    app:startDestination="@id/a1SplashScreen">
+
+    <fragment
+        android:id="@+id/a1SplashScreen"
+        android:name="com.example.alkewalletproyecto.Fragment.A1SplashScreen"
+        android:label="fragment_a1_splash_screen"
+        tools:layout="@layout/fragment_a1_splash_screen" >
+        <action
+            android:id="@+id/action_a1SplashScreen_to_a2SignUpLogin"
+            app:destination="@id/a2SignUpLogin" />
+    </fragment>
+    <fragment
+        android:id="@+id/a2SignUpLogin"
+        android:name="com.example.alkewalletproyecto.Fragment.A2SignUpLogin"
+        android:label="fragment_a2_sign_up_login"
+        tools:layout="@layout/fragment_a2_sign_up_login" >
+        <action
+            android:id="@+id/action_a2SignUpLogin_to_a3Login"
+            app:destination="@id/a3Login" />
+        <action
+            android:id="@+id/action_a2SignUpLogin_to_a4SignUp"
+            app:destination="@id/a4SignUp" />
+    </fragment>
+    <fragment
+        android:id="@+id/a3Login"
+        android:name="com.example.alkewalletproyecto.Fragment.A3Login"
+        android:label="fragment_a3_login"
+        tools:layout="@layout/fragment_a3_login" >
+        <action
+            android:id="@+id/action_a3Login_to_a4SignUp"
+            app:destination="@id/a4SignUp" />
+    </fragment>
+    <fragment
+        android:id="@+id/a4SignUp"
+        android:name="com.example.alkewalletproyecto.Fragment.A4SignUp"
+        android:label="fragment_a4_sign_up"
+        tools:layout="@layout/fragment_a4_sign_up" >
+        <action
+            android:id="@+id/action_a4SignUp_to_a3Login"
+            app:destination="@id/a3Login" />
+    </fragment>
+</navigation>

@@ -12,22 +12,26 @@ import com.example.alkewalletproyecto.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link LoginFragment#newInstance} factory method to
+ * Use the {@link A4SignUp#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class LoginFragment extends Fragment {
+public class A4SignUp extends Fragment {
 
 
-    public LoginFragment() {
+
+    public A4SignUp() {
         // Required empty public constructor
     }
 
-    public static LoginFragment newInstance(String param1, String param2) {
-        LoginFragment fragment = new LoginFragment();
+
+    // TODO: Rename and change types and number of parameters
+    public static A4SignUp newInstance(String param1, String param2) {
+        A4SignUp fragment = new A4SignUp();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
     }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,11 +43,6 @@ public class LoginFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_login, container, false);
-    }
-
-
-    public void onClickEditText(View view) {
-        view.setVisibility(View.GONE); // Hace que el EditText desaparezca
+        return inflater.inflate(R.layout.fragment_a4_sign_up, container, false);
     }
 }

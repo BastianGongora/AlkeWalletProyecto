@@ -10,25 +10,34 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.TextView;
 
 import com.example.alkewalletproyecto.R;
 
+/**
+ * A simple {@link Fragment} subclass.
+ * Use the {@link A1SplashScreen#newInstance} factory method to
+ * create an instance of this fragment.
+ */
+public class A1SplashScreen extends Fragment {
 
-public class SignUp_LoginFragment extends Fragment {
 
 
-    public SignUp_LoginFragment() {
+    public A1SplashScreen() {
         // Required empty public constructor
     }
 
+
+    public static A1SplashScreen newInstance(String param1, String param2) {
+        A1SplashScreen fragment = new A1SplashScreen();
+        Bundle args = new Bundle();
+        fragment.setArguments(args);
+        return fragment;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-
         }
     }
 
@@ -36,18 +45,15 @@ public class SignUp_LoginFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sign_up__login, container, false);
-
+        return inflater.inflate(R.layout.fragment_a1_splash_screen, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Button btn1 = view.findViewById(R.id.button_crearcuenta);
-        btn1.setOnClickListener(v ->
-                Navigation.findNavController(v).navigate(R.id.signUpFragment));
-        TextView txtcuenta = view.findViewById(R.id.textView_ya_cuenta);
-        txtcuenta.setOnClickListener(v ->
-                Navigation.findNavController(v).navigate(R.id.loginFragment2));
+        View vistasplash = view.findViewById(R.id.a1splashscreen);
+        vistasplash.setOnClickListener(v -> {
+            Navigation.findNavController(v).navigate(R.id.a2SignUpLogin);
+        });
     }
 }
