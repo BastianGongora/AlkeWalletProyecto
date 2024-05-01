@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.A5HomeTransacciones">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imagep1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/person1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtp1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jua"
+                    android:text="Yara Khalil"
+                    app:layout_constraintStart_toEndOf="@+id/imagep1"
+                    app:layout_constraintTop_toTopOf="@+id/imagep1"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txtp11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oct 14, 10:24 AM"
+                    android:textColor="#999999"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagep1"
+                    app:layout_constraintStart_toStartOf="@+id/txtp1"
+                    app:layout_constraintTop_toBottomOf="@+id/txtp1" />
+
+                <ImageView
+                    android:id="@+id/Ip1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/send_icon_yellow"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagep1"
+                    app:layout_constraintEnd_toEndOf="@+id/imagep1"
+                    app:layout_constraintStart_toStartOf="@+id/imagep1"
+                    app:layout_constraintTop_toTopOf="@+id/imagep1" />
+
+                <TextView
+                    android:id="@+id/txtm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:text="-$15.00"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imagep2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/person2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jua"
+                    android:text="Sara Ibrahim"
+                    app:layout_constraintStart_toEndOf="@+id/imagep2"
+                    app:layout_constraintTop_toTopOf="@+id/imagep2"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txtp22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oct 12, 02:13 PM"
+                    android:textColor="#999999"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagep2"
+                    app:layout_constraintStart_toStartOf="@+id/txtp2"
+                    app:layout_constraintTop_toBottomOf="@+id/txtp2" />
+
+                <ImageView
+                    android:id="@+id/Ip2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/request_icon_2"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagep2"
+                    app:layout_constraintEnd_toEndOf="@+id/imagep2"
+                    app:layout_constraintStart_toStartOf="@+id/imagep2"
+                    app:layout_constraintTop_toTopOf="@+id/imagep2" />
+
+                <TextView
+                    android:id="@+id/txtm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:text="+$20.50"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imagep3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/person3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtp3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jua"
+                    android:text="Ahmad Ibrahim"
+                    app:layout_constraintStart_toEndOf="@+id/imagep3"
+                    app:layout_constraintTop_toTopOf="@+id/imagep3"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txtp33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oct 11, 01:19 AM"
+                    android:textColor="#999999"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagep3"
+                    app:layout_constraintStart_toStartOf="@+id/txtp3"
+                    app:layout_constraintTop_toBottomOf="@+id/txtp3" />
+
+                <ImageView
+                    android:id="@+id/Ip3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/request_icon_2"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagep3"
+                    app:layout_constraintEnd_toEndOf="@+id/imagep3"
+                    app:layout_constraintStart_toStartOf="@+id/imagep3"
+                    app:layout_constraintTop_toTopOf="@+id/imagep3" />
+
+                <TextView
+                    android:id="@+id/txtm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:text="+$12.40"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imagep4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/person4"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtp4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jua"
+                    android:text="Reem Khaled"
+                    app:layout_constraintStart_toEndOf="@+id/imagep4"
+                    app:layout_constraintTop_toTopOf="@+id/imagep4"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txtp44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oct 07, 09:10 PM"
+                    android:textColor="#999999"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagep4"
+                    app:layout_constraintStart_toStartOf="@+id/txtp4"
+                    app:layout_constraintTop_toBottomOf="@+id/txtp4" />
+
+                <ImageView
+                    android:id="@+id/Ip4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/send_icon_yellow"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagep4"
+                    app:layout_constraintEnd_toEndOf="@+id/imagep4"
+                    app:layout_constraintStart_toStartOf="@+id/imagep4"
+                    app:layout_constraintTop_toTopOf="@+id/imagep4" />
+
+                <TextView
+                    android:id="@+id/txtm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:text="-$21.30"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imagep5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/person5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtp5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jua"
+                    android:text="Hiba Saleh"
+                    app:layout_constraintStart_toEndOf="@+id/imagep5"
+                    app:layout_constraintTop_toTopOf="@+id/imagep5"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txtp55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oct 12, 02:13 PM"
+                    android:textColor="#999999"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagep5"
+                    app:layout_constraintStart_toStartOf="@+id/txtp5"
+                    app:layout_constraintTop_toBottomOf="@+id/txtp5" />
+
+                <ImageView
+                    android:id="@+id/Ip5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/request_icon_2"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagep5"
+                    app:layout_constraintEnd_toEndOf="@+id/imagep5"
+                    app:layout_constraintStart_toStartOf="@+id/imagep5"
+                    app:layout_constraintTop_toTopOf="@+id/imagep5" />
+
+                <TextView
+                    android:id="@+id/txtm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:text="+$09.00"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
