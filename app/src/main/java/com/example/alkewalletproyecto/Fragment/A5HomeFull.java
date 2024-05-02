@@ -10,11 +10,7 @@ import android.view.ViewGroup;
 
 import com.example.alkewalletproyecto.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link A5HomeFull#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class A5HomeFull extends Fragment {
 
     public A5HomeFull() {
